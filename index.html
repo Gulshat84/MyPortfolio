@@ -35,7 +35,7 @@
           <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Фрилансер</span>
           <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">Гульшат Нугуманова</h1>
           <p class="hero-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина.</p>
-          <button class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
+          <button data-toggle="modal" class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
 
         </div>
         <!-- /.hero-text -->
@@ -53,32 +53,32 @@
         <h2 class="section-title">Со мной удобно работать</h2>
         <div class="features-block">
           <div class="features-item">
-            <img src="/img/features/offer-img.svg" alt="По договору" class="features-image">
+            <img src="img/features/offer-img.svg" alt="По договору" class="features-image">
             <h3 class="features-title">По договору</h3>
             <p class="features-text">Работаю как самозанятая по договору.</p>
           </div>
           <div class="features-item">
-            <img src="/img/features/deadline-img.svg" alt="Точно в срок" class="features-image">
+            <img src="img/features/deadline-img.svg" alt="Точно в срок" class="features-image">
             <h3 class="features-title">Точно в срок</h3>
             <p class="features-text">В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу неустойку. </p>
           </div>
           <div class="features-item">
-            <img src="/img/features/agreement-img.svg" alt="Ценник под вас" class="features-image">
+            <img src="img/features/agreement-img.svg" alt="Ценник под вас" class="features-image">
             <h3 class="features-title">Ценник под вас</h3>
             <p class="features-text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
           </div>
           <div class="features-item">
-            <img src="/img/features/steps-img.svg" alt="Промежуточные итоги" class="features-image">
+            <img src="img/features/steps-img.svg" alt="Промежуточные итоги" class="features-image">
             <h3 class="features-title">Промежуточные итоги</h3>
             <p class="features-text">Показываю работу поэтапно, а не в последий момент перед крайним сроком.</p>
           </div>
           <div class="features-item">
-            <img src="/img/features/storage-img.svg" alt="Хостинг и домен " class="features-image">
+            <img src="img/features/storage-img.svg" alt="Хостинг и домен " class="features-image">
             <h3 class="features-title">Хостинг и домен </h3>
             <p class="features-text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL-сертификат.</p>
           </div>
           <div class="features-item">
-            <img src="/img/features/conversation-img.svg" alt="Не брошу после сдачи" class="features-image">
+            <img src="img/features/conversation-img.svg" alt="Не брошу после сдачи" class="features-image">
             <h3 class="features-title">Не брошу после сдачи</h3>
             <p class="features-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
           </div>
@@ -274,10 +274,10 @@
     <div class="container">
       <h2 class="section-title">Свяжитесь со мной</h2>
       <div class="contacts-block">
-        <form action="#" class="contacts-form">
+        <form action="send.php" method="POST" class="contacts-form">
           <h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
-          <input type="text" class="input input-name" placeholder="Ваше имя">
-          <input type="text" class="input input-phone" placeholder="Ваш телефон">
+          <input type="text" class="input input-name" placeholder="Ваше имя" name="name">
+          <input type="text" class="input input-phone" placeholder="Ваш телефон" name="phone">
           <button class="button form-button">Бесплатная консультация</button>
         </form>
         <!-- /.contacts-form -->
@@ -286,7 +286,7 @@
           <div class="contacts-data">
             <div class="contacts-phone">
               <h4 class="contacts-title">Телефон</h4>
-              <a href="tel:+79991234567" class="contacts-link">+7 999 123-45-67</a>
+              <a href="tel:+79991234567" class="contacts-link">+7 905 371-60-76</a>
             </div>
             <!-- /.conacts-phone -->
             <div class="contacts-mail">
@@ -317,7 +317,24 @@
       </div>
       <!-- /.contacts-block -->
     </div>
+    <div class="modal">
+      <div class="modal-overlay" id="overlay-button"></div>
+      <!-- /.modal-overlay -->
+      <div class="modal-dialog">
+        <a href="#" class="modal-close">X</a>
+        <form action="send.php" method="POST" class="contacts-form">
+          <h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+          <input type="text" class="input input-name" placeholder="Ваше имя" name="name">
+          <input type="text" class="input input-phone" placeholder="Ваш телефон" name="phone">
+          <button class="button form-button">Бесплатная консультация</button>
+      </form>
+      <!-- /.modal-form -->
+      </div>
+      <!-- /.modal-dialog -->      
+    </div>
+    <!-- /.modal -->
   </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

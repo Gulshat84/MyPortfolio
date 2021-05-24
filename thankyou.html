@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гульшат Нугуманова - фрилансер, веб-разработчик</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-header">
+        <div class="logo">
+          <span>NG</span>
+          <!-- <img src="img/logo.svg" alt="Gulshat Nugumanova" class="logo"> -->
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Gulshat84" class="social-link"><img src="img/Social/github.svg" alt="github"></a>
+          <a href="https://twitter.com/Gulshat92991988" class="social-link"><img src="img/Social/twitter.svg" alt="twitter"></a>
+          <a href="https://instagram.com/gulshat.nugumanova" class="social-link"><img src="img/Social/instagram.svg" alt="instagram"></a>
+          <a href="https://www.facebook.com/profile.php?id=100066778780355" class="social-link"><img src="img/Social/facebook.svg" alt="fb"></a>
+        </div>
+        <!-- /.social-links -->
+      </div>
+      <!-- /.hero-header -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Фрилансер</span>
+          <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">Гульшат Нугуманова</h1>
+          <p class="hero-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина.</p>
+          <button data-toggle="modal" class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
+
+        </div>
+        <!-- /.hero-text -->
+        <div class="hero-avatar wow fadeIn" data-wow-delay="1.5s"></div>
+        <!-- /.hero-avatar -->
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- /.hero-content -->
+  </header>
+  <main>
+    <section class="thankyou section">
+      <div class="thankyou-container">
+        <h1>Ваше сообщение отправлено.</h1>
+        <p>Я перезвоню вам в ближайшее время.</p>
+      </div>
+      <!-- /.thankyou-container -->
+    </section>
+    <!-- /.features -->
+    
+  </main>
+  <footer class="section">
+    <div class="container">
+      <h2 class="section-title">Свяжитесь со мной</h2>
+      <div class="contacts-block">
+        <form action="send.php" method="POST" class="contacts-form">
+          <h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+          <input type="text" class="input input-name" placeholder="Ваше имя" name="name">
+          <input type="text" class="input input-phone" placeholder="Ваш телефон" name="phone">
+          <button class="button form-button">Бесплатная консультация</button>
+        </form>
+        <!-- /.contacts-form -->
+
+        <div class="contacts-text">
+          <div class="contacts-data">
+            <div class="contacts-phone">
+              <h4 class="contacts-title">Телефон</h4>
+              <a href="tel:+79991234567" class="contacts-link">+7 905 371-60-76</a>
+            </div>
+            <!-- /.conacts-phone -->
+            <div class="contacts-mail">
+              <h4 class="contacts-title">Почта</h4>
+              <a href="mailto:gulshat.nugumanova@mail.ru" class="contacts-link">gulshat.nugumanova@mail.ru</a>
+            </div>
+            <!-- /.conacts-mail -->
+            <div class="contacts-social">
+              <h4 class="contacts-title">Соцсети</h4>
+              <a href="https://t.me/Gulshat_Nugumanova" class="contacts-link">t.me/gulshat</a>
+              <a href="https://vk.com/id187571514" class="contacts-link">vk.me/gulshat</a>
+              <a href="https://www.facebook.com/profile.php?id=100066778780355" class="contacts-link">fb.me/gulshat</a>
+            </div>
+            <!-- /.conacts-social -->
+          </div>
+          <!-- /.conacts-data -->
+          <div class="social-links">
+            <a href="https://github.com/Gulshat84" class="social-link"><img src="img/Social/github.svg"
+                alt="github"></a>
+            <a href="https://twitter.com/Gulshat92991988" class="social-link"><img src="img/Social/twitter.svg"
+                alt="twitter"></a>
+            <a href="https://instagram.com/gulshat.nugumanova" class="social-link"><img src="img/Social/instagram.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100066778780355" class="social-link"><img src="img/Social/facebook.svg" alt="fb"></a> </div>
+          <!-- /.social-links -->
+          <a href="#" class="contacts-policy">Политика конфиденциальности</a>
+        </div>
+        <!-- /.contacts-text -->
+      </div>
+      <!-- /.contacts-block -->
+    </div>
+    <div class="modal">
+      <div class="modal-overlay" id="overlay-button"></div>
+      <!-- /.modal-overlay -->
+      <div class="modal-dialog">
+        <a href="#" class="modal-close">X</a>
+        <form action="send.php" method="POST" class="contacts-form">
+          <h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+          <input type="text" class="input input-name" placeholder="Ваше имя" name="name">
+          <input type="text" class="input input-phone" placeholder="Ваш телефон" name="phone">
+          <button class="button form-button">Бесплатная консультация</button>
+      </form>
+      <!-- /.modal-form -->
+      </div>
+      <!-- /.modal-dialog -->      
+    </div>
+    <!-- /.modal -->
+  </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

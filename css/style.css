@@ -81,14 +81,15 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  font-weight: bold;  
+  font-weight: bold;
+  cursor: pointer;
 }
 .hero-avatar {
   width: 389px;
   height: 389px;
   background-color: #fff;
   border-radius: 50%;
-  background-image: url(/img/avatar.jpg);
+  background-image: url('../img/avatar.jpg');
   background-repeat: no-repeat;
   background-position: center top -60px;
   border: 7px solid #fff;
@@ -397,7 +398,7 @@ body {
     line-height: 140%;
   }
   .form-button {
-    font-size: 10px;
+    font-size: 10px;  
   }
   .contacts-phone,
   .contacts-mail {
@@ -414,4 +415,41 @@ body {
     display: block;
     margin-bottom: 13px;
   }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color:rgba(12, 12, 12, 0.59);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.modal-overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.modal-dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  text-decoration: none;
+  color: #000000;
 }
