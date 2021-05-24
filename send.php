@@ -36,7 +36,7 @@ try {
     $mail->setFrom('gulshatnugumanova517@gmail.com', 'Gulshat Nugumanova'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('gulshat.nugumanova.84@bk.ru');      
+    $mail->addAddress('gulshat.nugumanova@mail.ru');      
 
     
     // Отправка сообщения

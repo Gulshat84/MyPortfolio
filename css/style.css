@@ -1,24 +1,29 @@
 * {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 body {
   background-color: #20202D;
   margin: 0;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
+
 .section {
   padding-top: 64px;
   padding-bottom: 92px;
 }
+
 .section-title {
   margin: 0;
   margin-bottom: 84px;
@@ -26,32 +31,39 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
+
 .hero {
   padding-top: 50px;
   padding-bottom: 155px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
 }
+
 .hero-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 105px;
 }
+
 .logo {
   color: #fff;
   font-size: 30px;
 }
+
 .social-link {
   margin-left: 20px;
 }
+
 .social-link:first-child {
   margin-left: 0;
 }
+
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .hero-subtitle {
   display: block;
   font-size: 24px;
@@ -59,6 +71,7 @@ body {
   color: #FFBB01;
   margin-bottom: 14px;
 }
+
 .hero-title {
   font-weight: bold;
   font-size: 50px;
@@ -66,12 +79,14 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .hero-description {
   font-size: 16px;
   line-height: 28px;
   max-width: 450px;
   margin-bottom: 38px;
 }
+
 .button {
   background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
   box-shadow: 0 4px 0 #B68500;
@@ -84,33 +99,44 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
 .hero-avatar {
   width: 389px;
   height: 389px;
   background-color: #fff;
   border-radius: 50%;
-  background-image: url('../img/avatar.jpg');
+  overflow: hidden;
   background-repeat: no-repeat;
   background-position: center top -60px;
   border: 7px solid #fff;
 }
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* features */
 .features {
   background-color: #000;
 }
+
 .features-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .features-item {
   flex-basis: 30%;
   margin-bottom: 63px;
 }
+
 .features-image {
   display: block;
   margin-bottom: 22px;
 }
+
 .features-title {
   font-weight: bold;
   font-size: 24px;
@@ -118,6 +144,7 @@ body {
   margin: 0;
   margin-bottom: 16px;
 }
+
 .features-text {
   font-weight: normal;
   font-size: 16px;
@@ -129,16 +156,19 @@ body {
 .projects {
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
 }
+
 .projects-slide {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .project-text {
   flex-basis: 60%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .project-title {
   flex-basis: 100%;
   font-weight: bold;
@@ -147,22 +177,26 @@ body {
   margin: 0;
   margin-bottom: 41px;
 }
+
 .project-image {
   width: 350px;
   height: 270px;
   border-radius: 6px;
 }
+
 .project-time,
 .project-cost {
   flex-basis: 50%;
   margin-bottom: 44px;
 }
+
 .project-time,
 .project-cost,
 .project-feedback {
   display: flex;
   align-items: flex-start;
 }
+
 .project-subtitle {
   margin: 0;
   margin-bottom: 7px;
@@ -170,6 +204,7 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+
 .project-link {
   margin: 0;
   font-weight: normal;
@@ -178,9 +213,11 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+
 .project-icon {
   margin-right: 16px;
 }
+
 .project-pagination {
   display: flex;
   align-items: center;
@@ -188,6 +225,7 @@ body {
   margin-top: 44px;
   cursor: pointer;
 }
+
 .project-bullet {
   width: 10px;
   height: 10px;
@@ -197,6 +235,7 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 .project-bullet-active {
   background-color: #FFBB01;
 }
@@ -209,6 +248,7 @@ body {
   max-width: 380px;
   padding: 40px 48px 49px 48px;
 }
+
 .form-title {
   font-weight: bold;
   font-size: 18px;
@@ -218,6 +258,7 @@ body {
   margin: 0;
   margin-bottom: 29px;
 }
+
 .input {
   background: #f8f8f8;
   border: none;
@@ -229,41 +270,51 @@ body {
   font-size: 14px;
   line-height: 28px;
 }
+
 .input-name {
   margin-bottom: 17px;
   background-image: url(../img/user-icon.svg);
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
+
 .input-phone {
   margin-bottom: 26px;
   background-image: url(../img/phone-icon.svg);
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
+
 .form-button {
   width: 100%;
 }
+
 .contacts-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .contacts-text {
   flex-basis: 50%;
 }
+
 .contacts-data {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 42px;
 }
-.contacts-phone, .contacts-mail {
+
+.contacts-phone,
+.contacts-mail {
   flex-basis: 40%;
   margin-bottom: 53px;
 }
+
 .contacts-social {
   flex-basis: 100%;
 }
+
 .contacts-title {
   font-weight: bold;
   font-size: 24px;
@@ -271,14 +322,17 @@ body {
   margin: 0;
   margin-bottom: 15px;
 }
+
 .contacts-link {
   text-decoration: none;
   color: inherit;
   margin-right: 37px;
 }
+
 .contacts-link:hover {
   text-decoration: underline;
 }
+
 .contacts-policy {
   display: inline-block;
   font-size: 15px;
@@ -287,6 +341,7 @@ body {
   color: #A5A5A5;
   margin-top: 72px;
 }
+
 /* responsive */
 @media (max-width: 1100px) {
   .hero-avatar {
@@ -296,46 +351,57 @@ body {
     background-position: center top;
   }
 }
+
 @media (max-width: 836px) {
   .hero-content {
     flex-direction: column;
   }
+
   .hero-avatar {
     order: 0;
     margin-bottom: 17px;
     background-size: 100%;
     background-position: center top;
   }
+
   .hero-text {
     order: 1;
     text-align: center;
   }
+
   .features-item {
     flex-basis: 45%;
   }
+
   .projects-slide {
     flex-direction: column;
   }
+
   .project-image {
     margin-bottom: 46px;
   }
-  .contacts-block {    
-    align-items: flex-start;    
+
+  .contacts-block {
+    align-items: flex-start;
     flex-direction: column;
   }
+
   .contacts-form {
     margin-bottom: 58px;
   }
 }
+
 @media (max-width: 564px) {
   .hero {
     padding-bottom: 75px;
   }
+
   .hero-subtitle {
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 4px;
   }
+
   .hero-avatar {
     width: 113px;
     height: 113px;
@@ -343,72 +409,90 @@ body {
     background-size: 100%;
     background-position: center top;
   }
+
   .hero-header {
     margin-bottom: 38px;
   }
+
   .social-link {
     margin-left: 5px;
   }
+
   .hero-title {
     font-size: 24px;
     line-height: 28px;
   }
+
   .hero-description {
     font-size: 14px;
     line-height: 140%;
   }
+
   .section {
     padding: 60px 0;
   }
+
   .section-title {
     font-size: 19px;
     line-height: 22px;
     margin-bottom: 60px;
   }
+
   .features-item {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+
   .features-title {
     font-size: 18px;
     line-height: 28px;
   }
+
   .features-text {
     font-size: 14px;
     line-height: 28px;
   }
+
   .project-title {
     font-size: 18px;
     line-height: 150%;
   }
+
   .project-time,
   .project-cost,
   .project-feedback {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+
   .project-paragraph {
     font-size: 14px;
   }
+
   .contacts-form {
     padding: 40px 19px;
   }
+
   .form-title {
     font-size: 15px;
     line-height: 140%;
   }
+
   .form-button {
-    font-size: 10px;  
+    font-size: 10px;
   }
+
   .contacts-phone,
   .contacts-mail {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+
   .contacts-title {
     font-size: 18px;
     line-height: 21px;
   }
+
   .contacts-link {
     font-size: 14px;
     line-height: 16px;
@@ -416,22 +500,25 @@ body {
     margin-bottom: 13px;
   }
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color:rgba(12, 12, 12, 0.59);
+  background-color: rgba(12, 12, 12, 0.59);
   z-index: 100;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .modal-overlay--visible {
   visibility: visible;
   opacity: 1;
 }
+
 .modal-dialog {
   position: fixed;
   top: 50%;
@@ -442,14 +529,20 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .modal-dialog--visible {
   visibility: visible;
   opacity: 1;
 }
+
 .modal-close {
   position: absolute;
   right: 18px;
   top: 18px;
   text-decoration: none;
   color: #000000;
+}
+
+.thankyou {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
 }
